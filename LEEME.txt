@@ -1,0 +1,20 @@
+GESTIÓN ELECTRICIDAD PWA v1.0
+
+Aplicación web instalable (PWA). No requiere Mac ni App Store.
+
+FUNCIONES
+- Calculadora de factura: potencia, días, kWh, tarifas, bono social y contador.
+- Comparador de comercializadoras con precios guardados.
+- Gestión/edición de tarifas.
+- Historial de cálculos guardados.
+- Exportación e importación de copia de seguridad JSON.
+- Datos locales del navegador.
+- Cache offline mediante Service Worker (requiere alojar la app en HTTPS).
+
+IMPORTANTE
+Los precios de Endesa, Octopus Energy y TotalEnergies se inicializan a cero porque no se dispone de datos verificados. Añade los precios vigentes manualmente.
+El cálculo aplica: base (potencia + energía + bono social + otros cargos + contador), impuesto eléctrico al 5,11269632% y VAT al 21% sobre base más impuesto eléctrico. Es un modelo orientativo, no una liquidación fiscal certificada.
+
+ALOJAMIENTO
+Sube los archivos de esta carpeta a un hosting HTTPS estático (por ejemplo GitHub Pages). Abre la URL en Safari del iPhone y usa Compartir > Añadir a pantalla de inicio.
+No uses el archivo index.html directamente desde Files: para instalación y modo offline se requiere HTTPS.
